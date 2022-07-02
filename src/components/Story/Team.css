@@ -1,0 +1,16 @@
+.Team{
+    height: 100vh;
+    width: 100vw;
+}
+.Team-container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.Team-text-container{
+    text-align: left;
+    padding: 5rem;
+}

@@ -1,0 +1,22 @@
+.Story{
+    height: 50vh;
+    width: 100vw;
+    
+}
+
+.Story-container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.Story-text-container{
+    font-size: 5rem;
+}
+
+
+
+  

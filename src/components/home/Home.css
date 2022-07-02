@@ -1,0 +1,144 @@
+.Home{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #111922;
+    z-index: 9999999;
+}
+.clicked{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9999999;
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+
+.Home-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+
+}
+
+.Hero-img-container{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    justify-content: center;
+
+    left: 5rem;
+}
+.Hero-img-container > img{
+    height: 500px;
+    width: auto;
+
+    object-fit: scale-down;
+}
+
+.Hero-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 10rem;
+    font-size: 2rem;
+}
+.Hero-text-container > p{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Hero-mid-container{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 30%;
+    font-size: 3rem;
+}
+
+.Hero-bottom-container{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 3rem;
+}
+
+@media screen and (max-width: 2300px) {
+
+    .Home-container{
+        flex-direction: column;
+    }
+
+    .Hero-img-container > img{
+        height: 100%;
+        width: auto;
+    }
+    
+    .Hero-img-container{
+        width: 100%;
+        height: 25%;
+        display: block;
+        position: relative;
+        left: auto;
+
+    }
+    .Hero-text-container{
+        width: 100%;
+        height: 25%;
+        display: block;
+        position: relative;
+        right: auto;
+    }
+
+    .Hero-mid-container{
+        bottom: 50%;
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .Home-container{
+        flex-direction: column;
+    }
+
+    .Hero-img-container > img{
+        height: 100%;
+    }
+    
+    .Hero-img-container{
+        width: 100%;
+        height: 25%;
+        display: block;
+        position: relative;
+        left: auto;
+        object-fit: scale-down;
+
+    }
+    .Hero-text-container{
+        width: 100%;
+        height: 25%;
+        display: block;
+        position: relative;
+        right: auto;
+        font-size: 1rem;
+    }
+
+    .Hero-mid-container{
+        bottom: 50%;
+        font-size: 1rem;
+    }
+}
